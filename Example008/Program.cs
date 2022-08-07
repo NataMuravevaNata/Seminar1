@@ -1,0 +1,13 @@
+﻿int a = new Random().Next(10,99);
+Console.WriteLine(a);
+int y = (a % 10);
+Console.WriteLine("Вторая цифра числа:");
+Console.WriteLine( y );
+int x = (a / 10);
+Console.WriteLine("Первая цифра числа:");
+Console.WriteLine( x );
+int max = x;
+if (y>max) max=y;
+if (y<max) max=x;
+Console.WriteLine( "max=" );
+Console.WriteLine(max);
